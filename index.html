@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <title>Two Steps From Hell Survey Form</title>
+</head>
+
+<body>
+  <div class="heading">
+    <h1 id="title">Two Steps From Hell Survey Form</h1>
+  <p id="description">Would you like to taking the time to help us fill out our survey?</p>
+  </div>
+  
+  <form action="" id="survey-form">
+    
+    <label for="name" id="name-label">
+      Name
+      <input type="text" id="name" placeholder="Your name..." required>
+    </label>
+    <label for="email" id="email-label">
+      Email
+      <input type="email" id="email" placeholder="Your email..." required>
+    </label>
+    <label for="number" id="number-label">
+      Age<span>(optional)</span>
+      <input type="number" id="number" placeholder="Your age..." min="14" max="60">
+    </label>
+    <label for="stat">
+      Which option best describes your current role?
+      <select name="role" id="dropdown">
+        <option disabled selected>Select current role...</option>
+        <option value="Student">Student</option>
+        <option value="Fulltime job">Fulltime job</option>
+        <option value="Freelancer">Freelancer</option>
+        <option value="Retired">Retired</option>
+        <option value="Other">Other</option>
+      </select>
+    </label>
+    
+    <div class="radio">
+      <p>Would you recommend to your friends?</p>
+      <label for="sure">
+        <input value="sure"  type="radio" name="recommended" id="sure" checked>
+        Sure
+      </label>
+      <label for="maybe">
+        <input value="maybe" type="radio" name="recommended" id="maybe">
+        Maybe
+      </label>
+      <label for="ntsure">
+        <input value="not-sure" type="radio" name="recommended" id="ntsure">
+        Not sure
+      </label>
+    </div>
+    
+    <label for="">
+      <select name="" id="dropdown">
+        <option value="internet" checked>Internet</option>
+        <option value="youtube">YouTube</option>
+        <option value="friend">Friend</option>
+        <option value="other">Other</option>
+      </select>
+    </label>
+    
+    <div class="box">
+      <p>Which album most you like?</p>
+      <label for="Invicible">
+        <input value="Invicible" type="checkbox" id="Invicible">
+        Invicible
+      </label>
+      <label for="Illusions">
+        <input value="Illusions" type="checkbox" id="Illusions">
+        Illusions
+      </label>
+      <label for="Archangel">
+        <input value="Archangel" type="checkbox" id="Archangel">
+        Archangel
+      </label>
+      <label for="SkyWorld">
+        <input value="SkyWorld" type="checkbox" id="SkyWorld">
+        SkyWorld
+      </label>
+      <label for="Miracles">
+        <input value="Miracles" type="checkbox" id="Miracles">
+        Miracles
+      </label>
+      <label for="Battlecry">
+        <input value="Battlecry" type="checkbox" id="Battlecry">
+        Battlecry
+      </label>
+    </div>
+    
+    <p>Any commnets?</p>
+    <textarea name="" id="comment" rows="8" cols="40"></textarea>
+    
+    <button type="submit" id="submit">Submit</button>
+    
+  </form>
+
+<script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
+</body>
+
+</html>

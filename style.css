@@ -1,0 +1,92 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+body {
+  padding: 10% 5%;
+  background: url(background.png);
+  background-size: contain;
+  background-position: center;
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  background-color: rgb(150,150,150);
+  font-family: "Poppins", sans-serif;
+}
+.heading {
+  max-width: 600px;
+  margin: auto;
+  background: rgba(0,0,0,.3);
+  border-radius: .3rem;
+  padding: .8rem;
+  box-shadow: 0 5px 10px rgba(0,0,0,.2);
+}
+#title {
+  color: white;
+  text-align: center;
+  font-size: 3rem;
+  margin-bottom: .6rem;
+}
+#description {
+  text-align: center;
+  font-size: 1.5rem;
+  color: white;
+}
+#survey-form {
+  max-width: 600px;
+  margin: 2.5rem auto;
+  background: rgba(0,0,0,.3);
+  padding: .8rem;
+  border-radius: .3rem;
+  box-shadow: 0 5px 10px rgba(0,0,0,.2);
+}
+#name,
+#email,
+#number,
+#dropdown,
+#comment {
+  width: 100%;
+  padding: .3rem;
+  margin: .8rem 0;
+  outline: none;
+  font-style: inherit;
+  border-radius: .2rem;
+  border: 2px solid #ccc;
+}
+label,
+p {
+  font-size: 1.2rem;
+  color: #eee;
+}
+label span {
+  font-size: .8rem;
+  padding-left: 5px;
+  
+}
+.radio,
+.box {
+  display: flex;
+  flex-direction: column;
+}
+.radio label,
+.box label {
+  margin: .4rem 0;
+}
+textarea {
+  width: 100%;
+  height: 8rem;
+}
+#submit {
+  width: 100%;
+  outline: none;
+  background: rgba(0,0,0,.3);
+  color: #eee;
+  font-weight: bold;
+  border: none;
+  height: 2rem;
+  border-radius: .3rem;
+}
+#submit:hover {
+  background: #eee;
+  color: #666;
+}
